@@ -6,7 +6,7 @@ xhr.onload = function()
 {
     if(this.status === 200)
     {
-        console.log(JSON.parse(this.responseText))
+        console.log(JSON.parse(this.responseText)); 
     }
 }
 
