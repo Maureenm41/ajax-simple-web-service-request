@@ -1,0 +1,43 @@
+body
+{
+    /*background-image: url("assets/bg-newspaper.jpg");*/
+    background-color: rgb(180, 169, 162);
+    background-image: url("assets/cosy.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+header
+{
+    margin-top: 0;
+    text-align: left;
+}
+
+h1
+{
+    font-family: 'Niconne', cursive;
+    font-size: 7vh;
+}
+.main
+{
+    float: left;
+}
+
+
+blockquote
+{
+    background-color: rgba(0, 0, 0, 0.178);
+    /*border-radius: 10vh;*/
+    font-size: 3.5vh;
+    text-align: left;
+}
+
+/*.cosy
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}*/
