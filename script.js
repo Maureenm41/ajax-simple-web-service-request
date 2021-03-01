@@ -11,3 +11,5 @@ xhr.onload = function()
 }
 
 xhr.send();
+
+document.getElementById('.quote')= JSON.parse;
