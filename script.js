@@ -7,7 +7,7 @@ xhr.onload = function()
     if(this.status === 200)
     {
         console.log(JSON.parse(this.responseText)); 
-        document.getElementById('quoteText').innerHTML= this.responseText;
+        document.getElementById('quoteText').innerHTML= this.responseText.slice(9,120);
     }
 }
 
