@@ -14,10 +14,6 @@ xhr.onload = function()
 xhr.send();
 
 
-var data=xhr.responseText;
-var jsonResponse = JSON.parse(data);
-console.log(jsonResponse["Data"]);
-document.getElementById('quote').innerHTML= jsonResponse;
 
 //document.getElementById('quote')= "hello";
 
