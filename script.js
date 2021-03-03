@@ -19,7 +19,7 @@ xhr.onload = function testing() //donwload the quote
         .then(res => res.json())
         .then(data => console.log(data.author))
 
-        document.getElementById('quote').innerHTML= this.responseText;
+        document.getElementById('quote').innerHTML= then(data => console.log(data.author));
     }
 }
 
@@ -27,7 +27,7 @@ xhr.send();
 
 let quoteTest = xhr.onload ;
 
-document.getElementById(quote).innerHTML =testing ;
+document.getElementById(quote).innerHTML =testing() ;
 
 document.getElementById(quote).innerHTML = data.quote ;
 
