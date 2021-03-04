@@ -23,8 +23,6 @@ xhr.onload = function testing() //donwload the quote
         .then(res => res.json())
         .then(data => console.log(data.author))
 
-        document.write(data.author)
-
         fetch("https://thatsthespir.it/api")
 
         .then(res => res.json())
