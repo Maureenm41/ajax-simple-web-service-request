@@ -2,11 +2,10 @@ var xhr = new XMLHttpRequest;
 
 xhr.open('GET','https://thatsthespir.it/api',true)
 
-xhr.onload = function testing() //donwload the quote
+xhr.onload = function ()  //donwload the quote
 {
     if(this.status === 200)
     {
-        console.log(JSON.parse(this.responseText)); 
 
         document.getElementById('quoteText').innerHTML= this.responseText.slice(9,150);
 
@@ -31,7 +30,6 @@ xhr.onload = function testing() //donwload the quote
 }
 
 xhr.send();
-//document.getElementById('quote')= "hello";
 
 
 
