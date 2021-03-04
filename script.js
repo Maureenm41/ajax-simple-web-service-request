@@ -7,7 +7,7 @@ xhr.onload = function ()  //donwload the quote
     if(this.status === 200)
     {
 
-        document.getElementById('quoteText').innerHTML= this.responseText.slice(9,150);
+        document.getElementById('quoteText').innerHTML= this.responseText.slice(9,500);
 
         fetch("https://thatsthespir.it/api")
 
