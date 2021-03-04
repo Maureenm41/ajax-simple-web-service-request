@@ -8,7 +8,9 @@ xhr.onload = function testing() //donwload the quote
     {
         console.log(JSON.parse(this.responseText)); 
 
-        document.getElementById('quote').innerHTML= this.responseText.slice(9,150);
+        document.getElementById('quoteText').innerHTML= this.responseText.slice(9,150);
+
+        
 
         fetch("https://thatsthespir.it/api")
 
@@ -37,9 +39,6 @@ xhr.send();
 let quoteTest = xhr ;
 //document.getElementById('quote')= "hello";
 
-document.getElementById('quote').innerHTML= this.responseText.slice(9,150);
-
-
 //test 2
 
 fetch("https://thatsthespir.it/api")
@@ -58,6 +57,7 @@ fetch("https://thatsthespir.it/api")
 
 .then(res => res.json())
 .then(data => console.log(data.photo))
+
 
 
 
