@@ -1,8 +1,8 @@
-var xhr = new XMLHttpRequest;
+var xhttp = new XMLHttpRequest;
 
-xhr.open('GET','https://thatsthespir.it/api',true)
+xhttp.open('GET','https://thatsthespir.it/api',true)
 
-xhr.onload = function ()  //donwload the quote
+xhttp.onload = function ()  //donwload the quote
 {
     if(this.status === 200)
     {
@@ -29,7 +29,7 @@ xhr.onload = function ()  //donwload the quote
     }
 }
 
-xhr.send();
+xhttp.send();
 
 
 
