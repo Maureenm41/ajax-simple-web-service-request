@@ -8,6 +8,8 @@ xhr.onload = function testing() //donwload the quote
     {
         console.log(JSON.parse(this.responseText)); 
 
+        document.getElementById('quote').innerHTML= this.responseText.slice(9,150);
+
         fetch("https://thatsthespir.it/api")
 
         .then(res => res.json())
@@ -19,23 +21,23 @@ xhr.onload = function testing() //donwload the quote
         .then(res => res.json())
         .then(data => console.log(data.author))
 
-        document.getElementById('quote').innerHTML= then(data => console.log(data.author));
+        document.write(data.author)
+
+        fetch("https://thatsthespir.it/api")
+
+        .then(res => res.json())
+        .then(data => console.log(data.photo))
+
+        
     }
 }
 
 xhr.send();
 
-let quoteTest = xhr.onload ;
-
-document.getElementById(quote).innerHTML =testing() ;
-
-document.getElementById(quote).innerHTML = data.quote ;
-
-
-
+let quoteTest = xhr ;
 //document.getElementById('quote')= "hello";
 
-document.getElementById('quote').innerHTML= this.responseText;
+document.getElementById('quote').innerHTML= this.responseText.slice(9,150);
 
 
 //test 2
@@ -43,13 +45,19 @@ document.getElementById('quote').innerHTML= this.responseText;
 fetch("https://thatsthespir.it/api")
 
 .then(res => res.json())
-.then( data => document.getElementById(quote).innerHTML= 'test')
+.then( data => console.log(data.quote))
 
 
 fetch("https://thatsthespir.it/api")
 
 .then(res => res.json())
-.then(data => document.getElementById(quote).innerHTML=console.log(data.author))
+.then(data => console.log(data.author))
+
+
+fetch("https://thatsthespir.it/api")
+
+.then(res => res.json())
+.then(data => console.log(data.photo))
 
 
 
