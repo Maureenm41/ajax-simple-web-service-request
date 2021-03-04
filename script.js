@@ -1,4 +1,4 @@
-let xhr = new XMLHttpRequest;
+var xhr = new XMLHttpRequest;
 
 xhr.open('GET','https:thatsthespir.it/api',true)
 
