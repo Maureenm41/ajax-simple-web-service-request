@@ -14,6 +14,10 @@ xhttp.onload = function ()  //donwload the quote
         .then(res => res.json())
         .then( data => console.log(data.quote))
 
+        let DataQuote = then( data => console.log(data.quote))
+
+        document.getElementById('quoteText').innerHTML=DataQuote;
+
 
         fetch("https://thatsthespir.it/api")
 
