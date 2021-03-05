@@ -7,13 +7,12 @@ xhttp.onload = function ()  //donwload the quote
     if(this.status === 200)
     {
 
-        //document.getElementById('quoteText').innerHTML= this.responseText.slice(9,500);
+        document.getElementById('quoteText').innerHTML= this.responseText.slice(9,500);
 
         fetch("https://thatsthespir.it/api")
 
         .then(res => res.json())
         .then( data => console.log(data.quote))
-        .then(data => document.getElementById('quotetext').innerHTML=json.data[0].quote)
 
 
         fetch("https://thatsthespir.it/api")
@@ -26,18 +25,12 @@ xhttp.onload = function ()  //donwload the quote
         .then(res => res.json())
         .then(data => console.log(data.photo))
 
-        let jsonObj = req.responseText;
-        let profileJson = JSON.parse(jsonObj);
-        console.log(profileJson.data)
-    
-        document.getElementById("quoteText").innerHTML=profileJson.data[1].quote;
-        document.getElementById("author").innerHTML=profileJson.data[1].author;
-
         
     }
 }
 
 xhttp.send();
+//work but bug when show for user
 
 //test2
 
@@ -50,10 +43,11 @@ function getApi()
     {
         let jsonObj = req.responseText;
         let profileJson = JSON.parse(jsonObj);
-        console.log(profileJson.data)
+        console.log(profileJson.data);
     
         document.getElementById("quoteText").innerHTML=profileJson.data[1].quote;
         document.getElementById("author").innerHTML=profileJson.data[1].author;
     }
     req.send();
 }
+//don't work
