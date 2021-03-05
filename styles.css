@@ -63,6 +63,11 @@ img
     position: sticky;
 }
 
+#btn
+{
+    text-align: center;
+}
+
 button
 {
     background-color: rgb(51, 34, 22);
