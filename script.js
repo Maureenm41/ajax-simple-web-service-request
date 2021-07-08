@@ -54,3 +54,14 @@ function getApi()
     req.send();
 }
 //don't work
+
+function getQuote()
+{
+    fetch("https://thatsthespir.it/api")
+    .then(res => res.json())
+    .then(data =>
+        {
+            quote.innerHtml = `"${data.content}"`;
+            author.innerHTML = data.author;
+        })
+}
